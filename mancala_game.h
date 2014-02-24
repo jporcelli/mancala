@@ -1,17 +1,20 @@
-/* James C. Porcelli, SBU-ID 108900819, CSE230,
-   Spring 2013, Prof. Esmaili, HW # 3, gcc - 4.6 */
+/* 
+   @author - James C. Porcelli
+   @file - mancala_game.h
+   @app - Mancala, cmd line
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-/* APP LEVEL SETTINGS */
+/* App level settings */
 #define ERROR -1
 #define TRUE 1
 #define FALSE 0
-#define DEBUG 0 /* DEBUG SWITCH, USE (1) FOR ON / (0) FOR OFF
+#define DEBUG 0 /* Debug mode switch */
 
-/* GAME VALUES / SETTINGS / RULES / ETC */
+/* Game values, settings, rules, etc */
 #define ONE_NON_SCORING 1
 #define TWO_NON_SCORING 2
 #define THREE_NON_SCORING 3
@@ -28,14 +31,14 @@
 #define SCORING_PIT_A_POSITION 0
 #define STARTING_PIT 0
 
-/* PLAYER SUB - ROUTINES */
+/* Player functions */
 int prompt_player(int);
 
-/* GAME SUB - ROUTINES */
+/* Mancala sub routines */
 void display_board(int, int[], int[]);
 int isGameOver(int[], int);
 void redistribute_A(int[], int, int, int[]);
 void redistribute_B(int[], int, int, int[]);
 
-/* CP SUB - ROUTINESS */
+/* CP sub routines */
 int cp_random(int, int);
