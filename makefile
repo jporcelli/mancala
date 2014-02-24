@@ -1,8 +1,5 @@
 # Makefile for Mancala Game
 ############################################
-# James C. Porcelli, SB_ID 108900819, CSE230
-# Spring 2013, Prof. Esmaili, HW3, gcc - 4.6
-############################################
 CC= gcc
 CFLAGS= 
 EFILE= play_mancala
