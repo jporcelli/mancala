@@ -1,4 +1,4 @@
-mancala
+Mancala
 =======
 
    Mancala is an ancient family of board
